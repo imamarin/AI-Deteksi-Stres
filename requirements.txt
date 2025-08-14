@@ -1,7 +1,8 @@
-streamlit
-deepface
-opencv-python-headless
-tensorflow
-keras
-numpy
-pillow
+streamlit==1.37.1
+numpy==1.26.4
+pandas==2.2.2
+scikit-learn==1.5.1
+opencv-python==4.10.0.84
+deepface==0.0.79
+tensorflow==2.15.0
+keras==2.15.0
