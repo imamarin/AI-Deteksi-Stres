@@ -31,7 +31,7 @@ model_numerik.fit(X, y)
 # -------------------------
 # STREAMLIT APP
 # -------------------------
-st.title("🧠 AI Deteksi Stres Multi-Modal")
+st.title("🧠 KENAN AI - Deteksi Stres")
 st.write("Menggabungkan data kesehatan & aktivitas harian dengan analisis ekspresi wajah.")
 
 # --- INPUT DATA NUMERIK ---
@@ -89,4 +89,5 @@ if st.button("Prediksi Stres"):
         st.error(f"⚠️ Risiko stres tinggi! (Skor: {final_score:.2f})")
     else:
         st.success(f"✅ Risiko stres rendah. (Skor: {final_score:.2f})")
+
 
