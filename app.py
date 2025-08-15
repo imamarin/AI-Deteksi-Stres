@@ -76,7 +76,7 @@ if st.button("Prediksi Stres"):
         except Exception as e:
             st.error(f"Gagal mendeteksi wajah: {e}")
         
-        final_score = (pred_num * 0.6) + (score_foto * 0.5)
+        final_score = (pred_num * 0.5) + (score_foto * 0.5)
     else:
         st.warning("Tidak ada foto, prediksi hanya dari data numerik.")
         final_score = pred_num 
@@ -89,5 +89,6 @@ if st.button("Prediksi Stres"):
         st.error(f"⚠️ Risiko stres tinggi! (Skor: {final_score:.2f})")
     else:
         st.success(f"✅ Risiko stres rendah. (Skor: {final_score:.2f})")
+
 
 
