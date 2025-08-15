@@ -2,6 +2,7 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 from sklearn.ensemble import RandomForestClassifier
+import deepface_patch
 from deepface import DeepFace
 import cv2
 import tempfile
@@ -88,3 +89,4 @@ if st.button("Prediksi Stres"):
         st.error(f"⚠️ Risiko stres tinggi! (Skor: {final_score:.2f})")
     else:
         st.success(f"✅ Risiko stres rendah. (Skor: {final_score:.2f})")
+
