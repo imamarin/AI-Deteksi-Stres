@@ -31,7 +31,7 @@ model_numerik.fit(X, y)
 # -------------------------
 # STREAMLIT APP
 # -------------------------
-st.set_page_config(page_title="Kenan AI", page_icon="🧠", layout="wide")
+st.set_page_config(page_title="Kenan AI", page_icon="🧠")
 
 # CSS untuk menyembunyikan logo GitHub (ikon kanan atas)
 hide_github_icon = """
@@ -101,6 +101,7 @@ if st.button("Prediksi Stres"):
         st.error(f"⚠️ Risiko stres tinggi! (Skor: {final_score:.2f})")
     else:
         st.success(f"✅ Risiko stres rendah. (Skor: {final_score:.2f})")
+
 
 
 
