@@ -31,6 +31,18 @@ model_numerik.fit(X, y)
 # -------------------------
 # STREAMLIT APP
 # -------------------------
+st.set_page_config(page_title="Kenan AI", page_icon="🧠", layout="wide")
+
+# CSS untuk menyembunyikan logo GitHub (ikon kanan atas)
+hide_github_icon = """
+    <style>
+       .st-emotion-cache-1p1m4ay{
+            visibility: hidden;
+        }
+    </style>
+"""
+st.markdown(hide_github_icon, unsafe_allow_html=True)
+
 st.title("🧠 KENAN AI - Deteksi Stres")
 st.write("Menggabungkan data kesehatan & aktivitas harian dengan analisis ekspresi wajah.")
 
@@ -89,6 +101,7 @@ if st.button("Prediksi Stres"):
         st.error(f"⚠️ Risiko stres tinggi! (Skor: {final_score:.2f})")
     else:
         st.success(f"✅ Risiko stres rendah. (Skor: {final_score:.2f})")
+
 
 
 
